@@ -1,11 +1,16 @@
-export function lampaMegjelenit(){
+export function listaOsszeallit() {
     const ADATLISTA = [];
-    const ELEM  = $(".tabla");
     for (let index = 0; index < 9; index++) {
         ADATLISTA[index] = szamGeneral();
-        ELEM.append(`<div id="lampa"><p>${ADATLISTA[index]}</p></div>`);
     }
-    ellenoriz(ADATLISTA);
+    return ADATLISTA;
+}
+
+export function lampaMegjelenit(lista){
+    const ELEM  = $(".tabla");
+    for (let index = 0; index < lista.length; index++) {
+        ELEM.append(`<div id="lampa"><p>${lista[index]}</p></div>`)
+    }
 }
 
 function szamGeneral(){
@@ -13,11 +18,7 @@ function szamGeneral(){
 }
 
 function ellenoriz(lista) {
-   for (let index = 0; index < lista.length; index++) {
-        if (lista[index] == 1) {
-            lista[index].css(`background-color`, `yellow`);
-        }
-   } 
+
 }
 
 function lampaFel(){
@@ -25,4 +26,5 @@ function lampaFel(){
         lista[index].css("backroundcolor", "yellow")
       });
       
+
 }

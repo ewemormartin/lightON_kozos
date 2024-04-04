@@ -1,3 +1,3 @@
 import { lampaMegjelenit } from "./fuggvenyek.js";
-
-lampaMegjelenit();
+import { listaOsszeallit } from "./fuggvenyek.js";
+lampaMegjelenit(listaOsszeallit());
