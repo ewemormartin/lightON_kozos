@@ -3,7 +3,7 @@ export function lampaMegjelenit(){
     const ELEM  = $(".tabla");
     for (let index = 0; index < 9; index++) {
         ADATLISTA[index] = szamGeneral();
-        ELEM.append(`<div id="lampa"><p>fasz</p></div>`)
+        ELEM.append(`<div id="lampa"><p>${ADATLISTA[index]}</p></div>`)
     }
     
 }
