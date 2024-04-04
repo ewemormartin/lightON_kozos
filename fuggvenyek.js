@@ -27,3 +27,6 @@ function lampaFel(lista){
         }
     }
 }
+function kattintasra(){
+    
+}
