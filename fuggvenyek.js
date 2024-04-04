@@ -19,3 +19,10 @@ function ellenoriz(lista) {
         }
    } 
 }
+
+function lampaFel(){
+    lista[index].on("click", function(){
+        lista[index].css("backroundcolor", "yellow")
+      });
+      
+}
