@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+    max-width: 500px;
 }
+
 #lampa{
     height: 25px;
     width: 25px;
@@ -12,5 +14,4 @@
     margin: 5px;
     text-align: center;
     background-color: green;
-    
 }
