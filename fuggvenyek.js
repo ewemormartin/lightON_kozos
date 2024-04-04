@@ -1,11 +1,14 @@
-const ADATLISTA= [];
-
-
 export function lampaMegjelenit(){
-    const Elem  = $(".tabla");
-    for (let index = 0; index < 8; index++) {
-        ADATLISTA[index].push(true);
-        
+    const ADATLISTA = [];
+    const ELEM  = $(".tabla");
+    for (let index = 0; index < 9; index++) {
+        ADATLISTA[index] = szamGeneral();
+        ELEM.append(`<div id="lampa"><p>fasz</p></div>`)
     }
-    console.log(ADATLISTA)
+    
 }
+
+function szamGeneral(){
+    return Math.floor(Math.random() * 2);
+}
+
