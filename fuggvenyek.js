@@ -5,12 +5,12 @@ export function listaOsszeallit() {
     }
     return ADATLISTA;
 }
-
 export function lampaMegjelenit(lista){
-    const ELEM  = $(".tabla");
+    const ELEM = $(".tabla");
     for (let index = 0; index < lista.length; index++) {
-        ELEM.append(`<div id="lampa"><p>${lista[index]}</p></div>`)
+        ELEM.append(`<div class="lampa" id="lampa-${index}"><p>${lista[index]}</p></div>`);
     }
+    lampaFel(lista);
 }
 
 function szamGeneral(){
@@ -18,13 +18,12 @@ function szamGeneral(){
 }
 
 function ellenoriz(lista) {
-
 }
-
-function lampaFel(){
-    lista[index].on("click", function(){
-        lista[index].css("backroundcolor", "yellow")
-      });
-      
-
+function lampaFel(lista){
+    for (let index = 0; index < lista.length; index++) {
+        let lampa = $(`#lampa-${index}`);
+        if (lista[index] == 1) {
+            lampa.addClass("fel");
+        }
+    }
 }
