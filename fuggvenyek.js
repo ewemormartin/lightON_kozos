@@ -11,6 +11,7 @@ export function lampaMegjelenit(lista){
         ELEM.append(`<div class="lampa" id="lampa-${index}"><p>${lista[index]}</p></div>`);
     }
     lampaFel(lista);
+    kattintasra()
 }
 
 function szamGeneral(){
@@ -28,5 +29,7 @@ function lampaFel(lista){
     }
 }
 function kattintasra(){
-    
+    $(".lampa").on("click", function(){
+        $(this).css("background-color", "yellow"); 
+    });
 }
